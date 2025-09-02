@@ -2,8 +2,8 @@
 
 Curso de Bioinformatica, Segundo semestre 2025
 
-# Introducción
+# Introduction
 
-En este repositorio se encuentran los ejercicios realizados para el curso de Bioinformatica el segundo semestre del año 2025
+This repository contains the exercises completed for the Bioinformatics course in the second semester of 2025.
 
-El repositorio esta organisado por semanas de trabajo
+The repository is organized by weeks of work.
