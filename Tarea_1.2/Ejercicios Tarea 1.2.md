@@ -6,11 +6,15 @@ Este ejercicio se realizo en el archivo llamado Ejercicio de MD
 
 Se adjuntan en este escrito algunas imagenes del ejercicio
 
-![](/home/ahumada_quintanilla/snap/marktext/9/.config/marktext/images/2025-09-02-16-12-25-image.png)![](/home/ahumada_quintanilla/snap/marktext/9/.config/marktext/images/2025-09-02-16-13-11-image.png)![](/home/ahumada_quintanilla/snap/marktext/9/.config/marktext/images/2025-09-02-16-13-41-image.png)![](/home/ahumada_quintanilla/snap/marktext/9/.config/marktext/images/2025-09-02-16-14-13-image.png)
-
+![](./image/1.png)
+![](./image/2.png)
+![](./image/3.png)
+![](./image/4.png)
 Codigo del texto:
 
-![](/home/ahumada_quintanilla/snap/marktext/9/.config/marktext/images/2025-09-02-16-14-49-image.png)![](/home/ahumada_quintanilla/snap/marktext/9/.config/marktext/images/2025-09-02-16-15-38-image.png)![](/home/ahumada_quintanilla/snap/marktext/9/.config/marktext/images/2025-09-02-16-16-02-image.png)
+![](./image/5.png)
+![](./image/6.png)
+![](./image/7.png)
 
 ## **Ejercicio:** clona el repositorio de la clase y actualízalo que vez que sea necesario.
 
@@ -20,11 +24,11 @@ para clonar el repositorio de la clase se uso el comando:
 
 A continuacion se muestran las imagenes de los resultados
 
-![](git%20de%20la%20modificacion%20de%20la%20sesion%202%20Unidad%201.png)
+![](./image/git%20de%20la%20modificacion%20de%20la%20sesion%202%20Unidad%201.png)
 
 Figura 1: Codigo utilizado para hacer commit de los cambios realizados
 
-![](Modificacion%20de%20la%20sesion%202%20Unidad%201.png)
+![](./image/Modificacion%20de%20la%20sesion%202%20Unidad%201.png)
 
 Figura 2: Cambios realizados en el repositorio de la sesion 2
 
