@@ -136,6 +136,10 @@ La funcion creada se detalla a continuacion:
 
 ```
 calc.tetha <- function(Ne, u) {
+###function to estimate theta given Ne and u
+###arguments:
+#Ne = effective population size
+#u = mutation rate
   theta <- 4 * Ne * u
   return(theta)
 }
