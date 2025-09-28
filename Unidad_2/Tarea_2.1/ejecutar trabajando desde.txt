@@ -1,0 +1,32 @@
+#ejecutar trabajando desde /home/bioinfo1/aahumada/Unidad_2/Tarea2.1/code
+#Individuos y variantes que tiene el archivo
+vcftools --vcf /datos/compartido/ChileGenomico/GATK_ChGdb_recalibrated.autosomes.12262013.snps.known.vcf
+
+#sitios que no tienen datos perdidos
+vcftools --vcf /datos/compartido/ChileGenomico/GATK_ChGdb_recalibrated.autosomes.12262013.snps.known.vcf --max-missing 1 --out ../results/Datos_perdidos
+
+#creacion de un archivo con los SNPs del cromosoma 4, desde el 0-2MB
+vcftools --vcf /datos/compartido/ChileGenomico/GATK_ChGdb_recalibrated.autosomes.12262013.snps.known.vcf --chr 4 --from-bp 0 --to-bp 2000000 --recode -c > ../results/CLG_Chr4_0bp-2Mb.vcf
+
+#Reporte de variantes del archivo CLG_Chr4_0bp-2Mb.vcf
+vcftools --vcf ../results/CLG_Chr4_0bp-2Mb.vcf 
+
+#Reporte de cobertura promedio de los individuos del archivo CLG_Chr4_0bp-2Mb.vcf, Ademas crea el archivo profundidad_Chr4_0-2Mb.idepth
+vcftools --vcf ../results/CLG_Chr4_0bp-2Mb.vcf --depth --out ../results/profundidad_Chr4_0-2Mb
+
+#Calculo de frecuencias
+vcftools --vcf ../results/CLG_Chr4_0bp-2Mb.vcf --freq --out ../results/CLG_Chr4_0bp-2Mb_Frecuencias
+#frecuencia menor a 0.05
+vcftools --vcf ../results/CLG_Chr4_0bp-2Mb.vcf --max-missing 1 --freq --out ../results/CLG_Chr4_0bp-2Mb_no_miss
+
+#calculo de la heterocigocidad
+vcftools --vcf ../results/CLG_Chr4_0bp-2Mb.vcf --het --out ../results/heterocigosidad_CLG_Chr4_0bp-2Mb
+
+#calculo de la diversidad nucleotidica
+vcftools --vcf ../results/CLG_Chr4_0bp-2Mb.vcf --site-pi --out ../results/n,pi_CLG_Chr4_0bp-2Mb
+
+#transformar el archivo en plink
+vcftools --vcf ../results/CLG_Chr4_0bp-2Mb.vcf --plink --out ../results/plinkCLG_Chr4_0bp-2Mb
+
+
+
