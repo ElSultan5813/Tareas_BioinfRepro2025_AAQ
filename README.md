@@ -1,5 +1,7 @@
 # Tareas_BioinfRepro2025_AAQ
 
+Student: Alejandro Ahumada Quintanilla
+
 Curso de Bioinformatica, Segundo semestre 2025
 
 # Introduction
@@ -13,5 +15,3 @@ The repository is organized by weeks of work.
 ## [Tarea 1.2](./Tarea_1.2)
 
 ## [Tarea 1.3](./Tarea_1.3)
-
-

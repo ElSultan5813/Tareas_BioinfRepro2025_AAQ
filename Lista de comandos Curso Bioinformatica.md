@@ -59,8 +59,6 @@ para ejecutar comandos hay dos formas, darle la ruta o que este incluido en el P
 
 scp : Protocolo de copia segura
 
-
-
 ## Uso de Git
 
 git config --global --edit  :  Permite configurar el usuario y correo
@@ -70,8 +68,6 @@ git commit  :  Confirma y agrega los cambios a la branch en la que estas trabaja
 git diff   :  Para ver los cambios que se hicieron a un archivo.
 git rm  :  Si quieres borrar un archivo que ya había formado parte de un commit no sólo de tu compu sino del sistema de versiones de git, lo mejor es NO utilizar rm, sino git rm
 git push  :  Una vez que quieres integrar tus cambios a una rama, este comando te permite fusionar ramas. Debes decirle el origen (rama donde hiciste los commits) y el destino (por ejemplo master u otra rama).
-
-
 
 #Para subir cosas al git hub tuviste que cambiar de https a formato ssh, de esta forma no pide clave
 Comando para cambiar el modo :  git remote set-url origin git@github.com:ElSultan5813/Tareas_BioinfRepro2025_AAQ.git
