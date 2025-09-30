@@ -1,0 +1,10 @@
+
+VCFtools - v0.1.13
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--vcf ./out.log
+
+After filtering, kept 0 out of 0 Individuals
+After filtering, kept 5 out of a possible 5 Sites
+Run Time = 0.00 seconds

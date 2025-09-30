@@ -10,8 +10,9 @@ This repository contains the exercises completed for the Bioinformatics course i
 
 The repository is organized by weeks of work.
 
-## [Tarea 1.1](./Tarea_1.1)
+# Unidad 1
+## [Tarea 1.1](./Unidad_1/Tarea_1.1)
 
-## [Tarea 1.2](./Tarea_1.2)
+## [Tarea 1.2](./Unidad_1/Tarea_1.2)
 
-## [Tarea 1.3](./Tarea_1.3)
+## [Tarea 1.3](./Unidad_1/Tarea_1.3)

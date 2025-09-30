@@ -1,5 +1,5 @@
 # Tarea 2.1
-
+## Primera parte
 ### ¿Cuántos individuos y variantes (SNPs) tiene el archivo?
 
 ```
@@ -102,3 +102,41 @@ vcftools --vcf ../results/CLG_Chr4_0bp-2Mb.vcf --plink --out ../results/plinkCLG
 ```
 
 ![](./image/12.png)
+
+
+## Segunda parte
+### Enlista los archivos plink que hay en data. ¿Qué tipos de archivos son cada uno?
+![](./image/13.png)
+Aqui se pueden observar archivos .vcf, .bed, .bim, .fam, .csv. Siendo estos ultimos 4 archivos para ser usados con el programa plink
+
+### Consulta el manual de plink1.9 y contesta utilizando comandos de plink lo siguiente. Deposita cualquier arquico que generes an una carpeta Unididad2/Prac_Uni5/results:
+
+### a) Transforma de formato bed a formato ped (pista: sección Data Managment). El nombre del output debe ser igual, solo cambiando la extensión.
+usando el comado: 
+```
+plink --bfile ../data/ChileGenomico/chilean_all48_hg19 --recode --out ../results/chilean_all48_hg19_ped
+```
+se convirtio a formato ped
+![](./image/14.png)
+
+### b) Crea otro archivo ped (ojo PPPPed) pero esta vez filtrando los SNPs cuya frecuencia del alelo menor sea menor a 0.05 Y filtrando los individuos con más de 10% missing data. Tu output debe llamarse maicesArtegaetal2015_maf05_missing10
+
+Usando el comando
+```
+plink --bfile ../data/ChileGenomico/chilean_all48_hg19 --recode --maf 0.05 --mind 0.1 --out ../results/chilean_all48_hg19_ped_maf05_missing10
+```
+#### ¿Cuántos SNPs y cuántos individuos fueron removidos por los filtros?
+se uso el codigo 
+```
+ahumada_quintanilla@alejandro-ahumada-quintanilla:~/Escritorio/Bioinformatica/Tareas_BioinfRepro2025_AAQ/Unidad_2/Tarea_2.1/code$                                                       echo $(( $(awk '{print (NF - 6)/2; exit}' ../results/chilean_all48_hg19_ped.ped) - $(awk '{print (NF - 6)/2; exit}' ../results/chilean_all48_hg19_ped_maf05_missing10.ped) ))
+```
+Se quitaron en total 347070 SNPs
+![](./image/15.png)
+
+
+### c) Realiza un reporte de equilibrio de Hardy-Weinberg sobre el archivo chilean_all48_hg19_maf05_missing10 creado en el ejercicio anterior. El nombre del archivo de tu output debe contener chilean_all48_hg19_maf05_missing10.
+usnado el comando:
+```
+plink --file ../results/chilean_all48_hg19_ped_maf05_missing10 --hardy --out ../results/chilean_all48_hg19_ped_maf05_missing10_hardy
+```
+![](./image/16.png)
