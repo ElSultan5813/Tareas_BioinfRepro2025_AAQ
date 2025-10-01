@@ -1,3 +1,6 @@
+#descargar los datos de Chile genomico en la carpeta data
+scp -r bioinfo1@genoma.med.uchile.cl:/datos/compartido/ChileGenomico /home/ahumada_quintanilla/Escritorio/Bioinformatica/Tareas_BioinfRepro2025_AAQ/Unidad_2/Tarea_2.1/data
+
 #ejecutar trabajando desde /home/bioinfo1/aahumada/Unidad_2/Tarea2.1/code
 #Individuos y variantes que tiene el archivo
 vcftools --vcf /datos/compartido/ChileGenomico/GATK_ChGdb_recalibrated.autosomes.12262013.snps.known.vcf
