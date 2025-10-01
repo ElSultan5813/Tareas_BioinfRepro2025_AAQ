@@ -1,0 +1,13 @@
+PLINK v1.90b7.2 64-bit (11 Dec 2023)
+Options in effect:
+  --bfile ../data/ChileGenomico/chilean_all48_hg19.fam
+  --split-x
+
+Hostname: alejandro-ahumada-quintanilla
+Working directory: /home/ahumada_quintanilla/Escritorio/Bioinformatica/Tareas_BioinfRepro2025_AAQ/Unidad_2/Tarea_2.1/code
+Start time: Tue Sep 30 20:53:21 2025
+
+Error: Missing --split-x parameter.
+For more information, try "plink --help <flag name>" or "plink --help | more".
+
+End time: Tue Sep 30 20:53:21 2025

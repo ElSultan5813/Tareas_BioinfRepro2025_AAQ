@@ -19,6 +19,9 @@ vcftools --vcf ../results/CLG_Chr4_0bp-2Mb.vcf --freq --out ../results/CLG_Chr4_
 #frecuencia menor a 0.05
 vcftools --vcf ../results/CLG_Chr4_0bp-2Mb.vcf --max-missing 1 --freq --out ../results/CLG_Chr4_0bp-2Mb_no_miss
 
+#grafico de frecuencias
+Rscript ./histograma_MAF.R 
+
 #calculo de la heterocigocidad
 vcftools --vcf ../results/CLG_Chr4_0bp-2Mb.vcf --het --out ../results/heterocigosidad_CLG_Chr4_0bp-2Mb
 
