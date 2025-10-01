@@ -8,7 +8,7 @@
 vcftools --vcf /datos/compartido/ChileGenomico/GATK_ChGdb_recalibrated.autosomes.12262013.snps.known.vcf 
 ```
 
-Tiene 18 individuos y 4450360 SNPs
+Tiene 18 individuos y 4450360 SNPs 
 ![](./image/1.png)
 
 ### ¿Cuántos sitios del archivo no tienen datos perdidos?
