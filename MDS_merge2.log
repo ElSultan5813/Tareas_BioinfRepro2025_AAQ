@@ -1,0 +1,16 @@
+PLINK v1.90b7.2 64-bit (11 Dec 2023)
+Options in effect:
+  --bfile MDS_merge
+  --extract indepSNP.prune.in
+  --genome
+  --out MDS_merge2
+
+Hostname: alejandro-ahumada-quintanilla
+Working directory: /home/ahumada_quintanilla/Escritorio/Bioinformatica/Tareas_BioinfRepro2025_AAQ
+Start time: Wed Oct  1 17:15:59 2025
+
+Random number seed: 1759349759
+7622 MB RAM detected; reserving 3811 MB for main workspace.
+Error: Failed to open MDS_merge.bed.
+
+End time: Wed Oct  1 17:15:59 2025
