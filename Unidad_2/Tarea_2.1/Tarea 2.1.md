@@ -1,6 +1,12 @@
 # Tarea 2.1
 
+<<<<<<< HEAD
+
 ## Primera parte
+
+=======
+
+> > > > > > > 80c1fcead0640a0159682bbc554dc9033af6cded
 
 ### ¿Cuántos individuos y variantes (SNPs) tiene el archivo?
 
@@ -8,8 +14,13 @@
 vcftools --vcf /datos/compartido/ChileGenomico/GATK_ChGdb_recalibrated.autosomes.12262013.snps.known.vcf 
 ```
 
+<<<<<<< HEAD
 Tiene 18 individuos y 4450360 SNPs 
-![](./image/1.png)
+=======
+Tiene 18 individuos y 4450360 SNPs
+
+> > > > > > > 80c1fcead0640a0159682bbc554dc9033af6cded
+> > > > > > > ![](./image/1.png)
 
 ### ¿Cuántos sitios del archivo no tienen datos perdidos?
 
@@ -63,6 +74,7 @@ vcftools --vcf ../results/CLG_Chr4_0bp-2Mb.vcf --max-missing 1 --freq --out ../r
 
 ### Llama a un script escrito en lenguaje R que lee el archivo de frecuencias de variantes bialélicas y guarda un histograma con el espectro de MAF para las variantes bialélicas
 
+<<<<<<< HEAD
 Se uso el siguiente ocmado de R
 
 ```
@@ -99,6 +111,10 @@ ggsave("../results/histogram.png", plot = p, width = 8, height = 5, dpi = 300)
 ```
 
 ![](./image/21.png)
+
+=======
+
+> > > > > > > 80c1fcead0640a0159682bbc554dc9033af6cded
 
 ### ¿Cuántos sitios tienen una frecuencia del alelo menor <0.05?
 
@@ -141,6 +157,7 @@ vcftools --vcf ../results/CLG_Chr4_0bp-2Mb.vcf --plink --out ../results/plinkCLG
 ```
 
 ![](./image/12.png)
+<<<<<<< HEAD
 
 ## Segunda parte
 
@@ -325,3 +342,6 @@ print(contingency_table)
 ```
 
 ![](./image/20.png)
+=======
+
+> > > > > > > 80c1fcead0640a0159682bbc554dc9033af6cded
