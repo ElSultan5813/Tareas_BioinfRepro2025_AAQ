@@ -21,3 +21,5 @@ The repository is organized by weeks of work.
 # Unidad 2
 
 ## [Tarea 2.1](./Unidad_2/Tarea_2.1)
+
+## [Tarea 2.2](./Unidad_2/Tarea_2.2)
