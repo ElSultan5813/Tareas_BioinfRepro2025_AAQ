@@ -348,13 +348,13 @@ Los resultados obtenidos se detallan a continuacion:
 
 4. Resultado qpAdm
    Para Pima.DG
-     ![](./images/admix_2way_p2_1.png)
+     ![](./images/admix_2way_p3_1.png)
    Para CLM.DG
-     ![](./images/admix_2way_p2_1.png)
+     ![](./images/admix_2way_p3_2.png)
    Para Bahamas_EleutheraIsl_Ceramic.AG
-     ![](./images/admix_2way_p2_1.png)
+     ![](./images/admix_2way_p3_3.png)
    Para Chile_Conchali_700BP.AG
-     ![](./images/admix_2way_p2_1.png)
+     ![](./images/admix_2way_p3_4.png)
    
    En esta situación de proyecto se procedieron con modelos de dos vías para cada población target.
    Para todos los targets (Pima.DG, CLM.DG, Bahamas_EleutheraIsl_Ceramic.AG, Chile_Conchali_700BP.AG), los valores de "weight" (proporciones de mezcla) son negativos o extremadamente altos, mientras que los errores estándar (se) son enormes y los valores de Z son bajos. Esto es evidencia de un modelo no identificable o no realista ya sea que las fuentes seleccionadas son demasiado similares entre sí (es lo más probable dado el caso), o sus perfiles genéticos no representan adecuadamente los linajes ancestrales reales de los targets.
