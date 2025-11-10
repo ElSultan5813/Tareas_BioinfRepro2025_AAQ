@@ -1,0 +1,47 @@
+## filtrados
+# codigo paso 1
+bbduk.sh -Xmx2g threads=1 \
+in1=~/181004_curso_calidad_datos_NGS/fastq_raw/S3_R1.fastq.gz \
+in2=~/181004_curso_calidad_datos_NGS/fastq_raw/S3_R2.fastq.gz \
+out1=./S3_R1_filter1.fastq.gz \
+out2=./S3_R2_filter1.fastq.gz \
+ref=~/resources/bbmap/adapters.fa tpe tbo
+
+#Codigo paso 2
+bbduk.sh -Xmx2g threads=1 \
+in1=./S3_R1_filter1.fastq.gz \
+in2=./S3_R2_filter1.fastq.gz \
+out1=./S3_R1_filter2.fastq.gz \
+out2=./S3_R2_filter2.fastq.gz \
+ref=~/resources/bbmap/phix174_ill.ref.fa.gz
+
+#codigo paso 3
+bbduk.sh -Xmx2g threads=1 \
+in1=./S3_R1_filter2.fastq.gz \
+in2=./S3_R2_filter2.fastq.gz  \
+out1=./S3_R1_filter3.fastq.gz \
+out2=./S3_R2_filter3.fastq.gz \
+qtrim=w trimq=20 minlength=30 minavgquality=20
+
+## Alineamientos
+bwa mem -t 4 -M /datos/reference/genomes/hg19_reference/hg19.fasta \
+./S3_R1_filter3.fastq.gz \
+./S3_R1_filter3.fastq.gz \
+> S3.sam
+
+# convertir sam a bam
+java -jar /opt/picard/picard-2.25.2/picard.jar SamFormatConverter -I S3.sam -O S3.bam
+
+#ordenar lecturas alineadas por posicion
+java -jar /opt/picard/picard-2.25.2/picard.jar SortSam -I S3.bam -O S3_sorted.bam -SO coordinate
+
+#Añadir el campo Readgroup al archivo bam
+java -jar /opt/picard/picard-2.25.2/picard.jar AddOrReplaceReadGroups -I S3_sorted.bam -O S3_sorted_RG.bam -ID sample -LB Paired-end -PL Illumina -PU Unknown -SM sample
+
+#indexar alineamiento
+samtools index S3_sorted_RG.bam
+#se creo el archivo S3_sorted_RG.bam.bai
+
+#reporte de calidad
+qualimap bamqc -bam S3_sorted_RG.bam -gff ~/181004_curso_calidad_datos_NGS/regiones_blanco.bed -outdir ./S3_sorted_RG
+
