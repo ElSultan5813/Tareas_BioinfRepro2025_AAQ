@@ -134,12 +134,20 @@ En conclusion, este alinemainto de lecturas nos revela que no deberiamos fiarnos
    Aqui solo se encontro 1 variante de este tipo
    Tabla de variantes encontradas:
    ![](./image/3.png)
+
 6) Visualice una variante en IGV, mostrando tracks tanto para el alineamiento (bam) como las variantes detectadas (VCF).
-no logre visualizar en IGV
+   las siguientes imagenes muestran la pociciones de la 6 variantes detectadas
+   
+   ![](./image/4.png)
+   ![](./image/5.png)
+   ![](./image/6.png)
+   ![](./image/7.png)
+   ![](./image/8.png)
+   ![](./image/9.png)
+
 7) Asegúrese de usar un tamaño de ventana que muestre suficiente detalle como para leer la secuencia de referencia, pero sin un zoom excesivo para que se logre ver algo de contexto de secuencia. Ojalá que se vean otras variantes al rededor de la central. Incluya un track con los genes. Si no se ve ningún gen cercano a la variante, elija otra variante.
+   ![](./image/10.png)
+   
+   Se puede observar que en esta region se encuentran varias variantes cercanas al mismo gen, especificamente se encuentran cuatro variantes
 
-8) En resultados, indique en formato de tabla el número de variantes detectadas según ubicación (intrónica, río arriba, río abajo, codificante con cambio de sentido, sin sentido, etc).
-
-9) Realice una anotación de las variantes con la herramienta en línea VEP. Asegúrese de usar la versión del genoma que utilizó en el alineamiento. Incluya anotaciones de Significancia clínica y puntajes CADD. Baje la tabla de variantes anotadas en formato TXT y fíltrela (por ejemplo en R) para generar una tabla que solo contenga variantes con un valor distinto a "benign" en la columna "CLIN_SIG" o un valor de CAAD > 20. Incluya incluya la tabla filtrada en su informe (si hubo variantes que pasaron los filtros) e interprete sus resultados.
-
-10) En la sección conclusiones, asegúrese de concluir algo sobre la muestra (presencia o no de mutaciones con potencial patogénico).
+8) 
