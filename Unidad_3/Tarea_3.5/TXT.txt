@@ -1,0 +1,1 @@
+recordar que si no funciona en el pc de escritorio tal cual esta (error por falta de ram), entonces hay que ejecura el comando desde el servidor
