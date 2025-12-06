@@ -59,8 +59,6 @@ Por edad si exite una predominancia a que se diagnostique mas en personas de 60 
 
 Esta distrubucion podria tener un efecto a nivel de salud publica para poder focalizar las estrategias en los grupos poblacionales de mayor riesgo y tambien poder enfocar de mejor forma las estrategias de prevencion a nivel poblacional. Seria muy bueno poder repetir un estudio como este a nivel local
 
-
-
 # Análisis interpretativo
 
 Con respecto al diagnostico por sexo no se observaron diferencias con el gen seleccionado, ademas se observa que los primeros 4 genes mutados acumulan aproximadamente el 50 % de los casos, por lo tanto estos genes serian unos muy buenos marcadores para poder evaluar al momento del diagnostico de una persona con este tipo de cancer, lo cual podria servir para las estrategias de prevencion, testeando a las personas que se consideren dentro del gurpo de riesgo para prevenir la enfermedad grave y poder actuar a tiempo. Ademas, hay que tomar en considereacion que en este estudio la mayor parte de la poblacion diagnosticada fue de raza Blanca, esto puede deberse a un sesgo inicial del estudio por el lugar en el cual fue realizado el estudio. 
