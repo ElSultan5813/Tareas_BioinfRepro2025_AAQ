@@ -1,0 +1,3 @@
+Sample	Mapped (with MQ>0)	MQ0	Unmapped
+S3.md	71090.0	855.0	10557.0
+S3.recal	71080.0	853.0	1166.0

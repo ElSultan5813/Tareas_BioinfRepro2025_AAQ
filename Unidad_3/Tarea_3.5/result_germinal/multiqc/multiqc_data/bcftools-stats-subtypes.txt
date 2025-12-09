@@ -1,0 +1,2 @@
+Sample	A>C	A>G	A>T	C>A	C>G	C>T	G>A	G>C	G>T	T>A	T>C	T>G
+S3.haplotypecaller.filtered	2.0	17.0	9.0	4.0	1.0	31.0	23.0	1.0	4.0	1.0	18.0	3.0

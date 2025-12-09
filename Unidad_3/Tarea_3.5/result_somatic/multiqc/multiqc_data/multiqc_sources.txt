@@ -1,0 +1,13 @@
+Module	Section	Sample Name	Source
+FastQC (raw)	all_sections	S3-L1_1	/home/bioinfo1/aahumada/Unidad_3/Tarea_3.5/code/work/25/b9b5da2010a26b499a09b751ab96ae/5/S3-L1_1_fastqc.zip
+FastQC (raw)	all_sections	S3-L1_2	/home/bioinfo1/aahumada/Unidad_3/Tarea_3.5/code/work/25/b9b5da2010a26b499a09b751ab96ae/6/S3-L1_2_fastqc.zip
+FastP (Read preprocessing)	all_sections	S3-L1	/home/bioinfo1/aahumada/Unidad_3/Tarea_3.5/code/work/25/b9b5da2010a26b499a09b751ab96ae/4/S3-L1.fastp.json
+GATK4 MarkDuplicates	DuplicationMetrics	S3.md	/home/bioinfo1/aahumada/Unidad_3/Tarea_3.5/code/work/25/b9b5da2010a26b499a09b751ab96ae/7/S3.md.cram.metrics
+Samtools Flagstat	stats	S3.md	/home/bioinfo1/aahumada/Unidad_3/Tarea_3.5/code/work/25/b9b5da2010a26b499a09b751ab96ae/8/S3.md.cram.stats
+Samtools Flagstat	stats	S3.recal	/home/bioinfo1/aahumada/Unidad_3/Tarea_3.5/code/work/25/b9b5da2010a26b499a09b751ab96ae/12/S3.recal.cram.stats
+Mosdepth	genome_results	S3.md	/home/bioinfo1/aahumada/Unidad_3/Tarea_3.5/code/work/25/b9b5da2010a26b499a09b751ab96ae/9/S3.md.mosdepth.region.dist.txt
+Mosdepth	genome_results	S3.recal	/home/bioinfo1/aahumada/Unidad_3/Tarea_3.5/code/work/25/b9b5da2010a26b499a09b751ab96ae/13/S3.recal.mosdepth.region.dist.txt
+GATK4 BQSR	base_recalibrator	S3.recal.table	/home/bioinfo1/aahumada/Unidad_3/Tarea_3.5/code/work/25/b9b5da2010a26b499a09b751ab96ae/11/S3.recal.table
+Bcftools	stats	S3.mutect2.filtered	/home/bioinfo1/aahumada/Unidad_3/Tarea_3.5/code/work/25/b9b5da2010a26b499a09b751ab96ae/15/S3.mutect2.filtered.bcftools_stats.txt
+Vcftools	all_sections	TsTv by counts	/home/bioinfo1/aahumada/Unidad_3/Tarea_3.5/code/work/25/b9b5da2010a26b499a09b751ab96ae/16/S3.mutect2.filtered.TsTv.count
+Vcftools	all_sections	TsTv by quality	/home/bioinfo1/aahumada/Unidad_3/Tarea_3.5/code/work/25/b9b5da2010a26b499a09b751ab96ae/19/S3.mutect2.filtered.TsTv.qual

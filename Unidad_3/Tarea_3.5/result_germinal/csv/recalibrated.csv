@@ -1,0 +1,2 @@
+patient,sex,status,sample,cram,crai
+S3,NA,0,S3,../result_germinal/preprocessing/recalibrated/S3/S3.recal.cram,../result_germinal/preprocessing/recalibrated/S3/S3.recal.cram.crai

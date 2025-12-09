@@ -1,0 +1,2 @@
+Sample	A>C	A>G	A>T	C>A	C>G	C>T	G>A	G>C	G>T	T>A	T>C	T>G
+S3.mutect2.filtered	15.0	30.0	21.0	13.0	8.0	51.0	43.0	2.0	18.0	10.0	22.0	13.0

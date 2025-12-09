@@ -1,0 +1,2 @@
+patient,sex,status,sample,cram,crai,table
+S3,NA,1,S3,../result_somatic/preprocessing/markduplicates/S3/S3.md.cram,../result_somatic/preprocessing/markduplicates/S3/S3.md.cram.crai,../result_somatic/preprocessing/recal_table/S3/S3.recal.table

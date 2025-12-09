@@ -1,0 +1,2 @@
+Sample	Unique Pairs	Unique Unpaired	Duplicate Pairs Optical	Duplicate Pairs Nonoptical	Duplicate Unpaired	Unmapped
+S3.md	4300.0	679.0	146.0	66174.0	491.0	10712.0

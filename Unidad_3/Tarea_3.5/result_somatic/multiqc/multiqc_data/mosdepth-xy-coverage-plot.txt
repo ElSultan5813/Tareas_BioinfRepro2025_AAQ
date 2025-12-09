@@ -1,0 +1,3 @@
+Sample	Chromosome X	Chromosome Y
+S3.md	1.0	1.0
+S3.recal	1.0	1.0

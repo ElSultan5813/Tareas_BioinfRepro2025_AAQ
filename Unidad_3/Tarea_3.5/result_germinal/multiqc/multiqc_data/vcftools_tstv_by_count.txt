@@ -1,0 +1,2 @@
+Sample	0	1
+S3.haplotypecaller.filtered.TsTv.count	(0.0, None)	(1.0, 10.0)
