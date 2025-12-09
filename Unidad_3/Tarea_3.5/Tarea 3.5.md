@@ -1,4 +1,5 @@
 # Tarea 3.5
+Para esta tarea se utilizo el programa nf-core/sarek
 
 Se cambiaron los campos necesarios del script para poder ser ejecutados con mis muestras asignadas, las cual es la muestra S3 (R1 y R2)
 
@@ -10,7 +11,7 @@ sarek_germinal.sh
 # Ejecuta nf-core/sarek en modo GERMINAL para una sola muestra (normal/germinal).
 # Uso:
 #   A) Nombre de muestra automático (recomendado para alumnos):
- bash sarek_germinal.sh /home/bioinfo1/181004_curso_calidad_datos_NGS/fastq_raw/S3_R1.fastq.gz /home/bioinfo1/181004_curso_calidad_datos_NGS/fastq_raw/S3_R2.fastq.gz /home/bioinfo1/aahumada/Unidad_3/Tarea_3.5/results
+# bash sarek_germinal.sh /home/bioinfo1/181004_curso_calidad_datos_NGS/fastq_raw/S3_R1.fastq.gz /home/bioinfo1/181004_curso_calidad_datos_NGS/fastq_raw/S3_R2.fastq.gz /home/bioinfo1/aahumada/Unidad_3/Tarea_3.5/results
 
 #   B) Nombre de muestra explícito:
 #        bash sarek_germinal.sh R1.fastq.gz R2.fastq.gz /ruta/output nombre_muestra
@@ -83,7 +84,7 @@ sarek_somatic.sh
 # Ejecuta nf-core/sarek en modo SOMÁTICO (tumor-only).
 # Uso:
 #   A) Nombre de muestra automático:
- bash sarek_germinal.sh /home/bioinfo1/181004_curso_calidad_datos_NGS/fastq_raw/S3_R1.fastq.gz /home/bioinfo1/181004_curso_calidad_datos_NGS/fastq_raw/S3_R2.fastq.gz /home/bioinfo1/aahumada/Unidad_3/Tarea_3.5/results
+# bash sarek_germinal.sh /home/bioinfo1/181004_curso_calidad_datos_NGS/fastq_raw/S3_R1.fastq.gz /home/bioinfo1/181004_curso_calidad_datos_NGS/fastq_raw/S3_R2.fastq.gz /home/bioinfo1/aahumada/Unidad_3/Tarea_3.5/results
 #   B) Nombre de muestra explícito:
 #        bash sarek_somatic.sh R1.fastq.gz R2.fastq.gz /ruta/output nombre_muestra
 #
@@ -150,14 +151,8 @@ Los comandos para ejecutar los scripts fueron
 
 ```
 bash sarek_germinal.sh /home/bioinfo1/181004_curso_calidad_datos_NGS/fastq_raw/S3_R1.fastq.gz /home/bioinfo1/181004_curso_calidad_datos_NGS/fastq_raw/S3_R2.fastq.gz ../results
-
-bash sarek_germinal.sh /home/elsultan/Desktop/S3_R1.fastq.gz /home/elsultan/Desktop/S3_R2.fastq.gz ../results
-
 ```
 
 ```
 bash sarek_somatic.sh /home/bioinfo1/181004_curso_calidad_datos_NGS/fastq_raw/S3_R1.fastq.gz /home/bioinfo1/181004_curso_calidad_datos_NGS/fastq_raw/S3_R2.fastq.gz ../results
 ```
-
-Para ejecutar estos scrpts se utilizo el comando screen
-[detached from 104533.pts-6.genoma]
