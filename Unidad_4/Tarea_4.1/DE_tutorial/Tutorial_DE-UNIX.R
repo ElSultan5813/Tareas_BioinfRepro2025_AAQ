@@ -53,7 +53,7 @@
 
 ## Define some constants (it is a good practice to declare them at the beginning of the scripts)
 outdir     <- "output"
-fdr_th     <- 0.2 # Proportion of false discoveries that are acceptable
+fdr_th     <- 0.19 # Proportion of false discoveries that are acceptable
 
 # Define some useful functions (it is a good idea to always document what the intend to do)
 source("Rfxs.R")
@@ -153,7 +153,7 @@ rownames(normdata) <- rownames(rawdata)
 # Create a vector or P/A calls for each probe using detection probabilities calculated by BeadStudio
 probe_present      <- Data.Raw[,detection] < 0.04
 detected_per_group <- t(apply(probe_present, 1, tapply, design$Group, sum))
-present  <- apply(detected_per_group >= 2, 1, any)
+present  <- apply(detected_per_group >= 1, 1, any)
 normdata <- normdata[present,]
 annot    <- annot[present, ]
 
@@ -226,7 +226,7 @@ logDiffs  <- Means %*% t(cmat)
 FC <- apply(logDiffs, 2, logdiff2FC)
 
 # Test each contrast using 200 permutations of sample labels
-test.cmat <- matest(madata, fit.fix, term="Group", Contrast=cmat, n.perm=200, test.type = "ttest",
+test.cmat <- matest(madata, fit.fix, term="Group", Contrast=cmat, n.perm=500, test.type = "ttest",
                  shuffle.method="sample", verbose=TRUE)
 
 # Contrasts names are not kept in the matrix of permutation results, so lets 
