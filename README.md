@@ -41,3 +41,5 @@ The repository is organized by weeks of work.
 # Unidad 4
 
 ## [Tarea_4.1](./Unidad_4/Tarea_4.1)
+
+## [Tarea_4.2](./Unidad_4/Tarea_4.2)
